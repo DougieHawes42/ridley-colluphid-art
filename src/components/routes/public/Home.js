@@ -14,7 +14,7 @@ const Home = () => {
   useEffect(() => {
     const fetchMessage = async () => {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api`);
+        const res = await axios.get(`/api`);
         setConnectionMessage(res.data.message);
       } catch (error) {
         console.error(`error fetching from backend: ${error}`);
