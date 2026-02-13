@@ -14,7 +14,6 @@ import Work from "./components/routes/public/Work";
 import About from "./components/routes/public/About";
 import Blog from "./components/routes/public/Blog";
 // auth
-import SignUp from "./components/routes/auth/SignUp";
 import SignIn from "./components/routes/auth/SignIn";
 // private
 import Dashboard from "./components/routes/private/Dashboard";
@@ -32,7 +31,6 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
         {/* auth routes */}
-        <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
         {/* private routes */}
         <Route path="/dashboard" element={<Dashboard />} />

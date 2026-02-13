@@ -2,45 +2,52 @@
 
 .header {
   display: flex;
-  max-height: $header-height;
-  min-height: $header-height;
+  flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
   padding: $y-padding-desktop $x-padding-desktop;
+  min-height: 100vh;
+  max-width: $navbar-width;
+  min-width: $navbar-width;
+  position: fixed;
+  top: 0;
   .header-title-container {
     .header-title {
-      font-size: $space_unit * 6;
+      width: 100%;
     }
   }
-  .header-links-mobile-outer {
-    position: absolute;
-    left: 0;
-    min-height: 100vh;
-    min-width: 100vw;
-    top: 0;
-  }
-  .header-links-mobile {
-    border-width: 2px;
+  .header-links-desktop {
     display: grid;
     grid-template-columns: 1fr;
-    padding: $space-unit $space-unit * 2 $space-unit * 2 $space-unit;
-    position: absolute;
-    right: $x-padding-desktop;
-    top: $y-padding-desktop;
   }
-  .header-links-mobile-darkmode {
-    background-color: $colour07;
-  }
-  .header-links-mobile-lightmode {
-    background-color: $colour02;
-  }
-  .header-links-mobile-icon {
-    cursor: pointer;
-    font-size: $space-unit * 6;
-    position: absolute;
-    right: $x-padding-desktop;
-    top: $y-padding-desktop;
-  }
+  // .header-links-mobile-outer {
+  //   position: absolute;
+  //   left: 0;
+  //   min-height: 100vh;
+  //   min-width: 100vw;
+  //   top: 0;
+  // }
+  // .header-links-mobile {
+  //   border-width: 2px;
+  //   display: grid;
+  //   grid-template-columns: 1fr;
+  //   padding: $space-unit $space-unit * 2 $space-unit * 2 $space-unit;
+  //   position: absolute;
+  //   right: $x-padding-desktop;
+  //   top: $y-padding-desktop;
+  // }
+  // .header-links-mobile-darkmode {
+  //   background-color: $colour07;
+  // }
+  // .header-links-mobile-lightmode {
+  //   background-color: $colour02;
+  // }
+  // .header-links-mobile-icon {
+  //   cursor: pointer;
+  //   font-size: $space-unit * 6;
+  //   position: absolute;
+  //   right: $x-padding-desktop;
+  //   top: $y-padding-desktop;
+  // }
 }
 
 .mode-toggle {
@@ -63,11 +70,11 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .header-links-desktop {
-    display: none;
-  }
-}
+// @media only screen and (max-width: 768px) {
+//   .header-links-desktop {
+//     display: none;
+//   }
+// }
 
 @media only screen and (min-width: 768px) {
   .header-links-mobile,

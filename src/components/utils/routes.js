@@ -8,8 +8,8 @@ export const Route1 = ({ darkmode, title, content }) => (
   >
     <motion.h2
       className="route-title"
-      initial={{ x: -300 }}
-      animate={{ x: 0 }}
+      initial={{ y: -300 }}
+      animate={{ y: 0 }}
       transition={{ duration: 0.3 }}
     >
       {title}

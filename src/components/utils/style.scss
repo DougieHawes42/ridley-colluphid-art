@@ -2,7 +2,6 @@
 
 .link {
   font-size: $space_unit * 4;
-  margin-left: $space-unit;
 }
 
 .link1-darkmode {
@@ -13,19 +12,21 @@
 }
 
 .route {
-  max-height: $route-height;
-  min-height: $route-height;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  max-width: $route-width;
+  min-height: 100vh;
+  min-width: $route-width;
+  left: $navbar-width;
+  overflow: scroll;
   padding: $y-padding-desktop $x-padding-desktop;
+  position: absolute;
+  width: calc(100vw - $navbar-width);
+  top: 0;
   .route-title {
     font-size: $space_unit * 5;
     position: absolute;
-    left: $x-padding-desktop;
-    top: $header-height;
+    top: $y-padding-desktop;
   }
   .route-content {
-    min-height: 200vh;
     padding-top: $space-unit * 5;
   }
 }

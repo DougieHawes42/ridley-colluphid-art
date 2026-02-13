@@ -57,5 +57,5 @@ $x-padding-desktop: $space-unit * 3;
 $y-padding-desktop: $space-unit;
 
 // sizes
-$header-height: $space-unit * 10;
-$route-height: calc(100vh - $header-height);
+$navbar-width: 210px;
+$route-width: calc(100vw - $navbar-width);
