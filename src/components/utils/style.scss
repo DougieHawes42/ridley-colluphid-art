@@ -1,0 +1,41 @@
+@import "../../display/style/variables.scss";
+
+.link {
+  font-size: $space_unit * 4;
+  margin-left: $space-unit;
+}
+
+.link1-darkmode {
+  color: $colour09;
+}
+.link1-lightmode {
+  color: $colour04;
+}
+
+.route {
+  max-height: $route-height;
+  min-height: $route-height;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: $y-padding-desktop $x-padding-desktop;
+  .route-title {
+    font-size: $space_unit * 5;
+    position: absolute;
+    left: $x-padding-desktop;
+    top: $header-height;
+  }
+  .route-content {
+    min-height: 200vh;
+    padding-top: $space-unit * 5;
+  }
+}
+.route1-darkmode {
+  .route-title {
+    color: $colour03;
+  }
+}
+.route1-lightmode {
+  .route-title {
+    color: $colour08;
+  }
+}
